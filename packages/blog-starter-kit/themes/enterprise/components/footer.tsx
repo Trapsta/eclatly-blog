@@ -3,7 +3,7 @@ import { Container } from './container';
 import { useAppContext } from './contexts/appContext';
 import { SocialLinks } from './social-links';
 
-const baseUrl = 'https://beta.eclatly.com/'
+const baseUrl = 'https://www.eclatly.com'
 
 export const Footer = () => {
 	const { publication } = useAppContext();
@@ -14,7 +14,7 @@ export const Footer = () => {
 				{PUBLICATION_LOGO ? (
 					<div className="mb-20 flex w-full flex-row justify-center">
 						<Link
-							href={'/'}
+							href={baseUrl}
 							aria-label={`${publication.title} home page`}
 							className="flex flex-row items-center gap-5"
 						>
@@ -54,12 +54,12 @@ export const Footer = () => {
 							<p className="mb-2 font-semibold text-slate-600 dark:text-neutral-200">Your Account</p>
 							<ul className="flex flex-col gap-1 text-slate-700 dark:text-neutral-300">
 								<li>
-									<a href="https://www.eclatly.com/" className="hover:underline">
+									<a href={`${baseUrl}/create-account`} className="hover:underline">
 										Sign Up
 									</a>
 								</li>
 								<li>
-									<a href={baseUrl} className="hover:underline">
+									<a href={`${baseUrl}/app`} className="hover:underline">
 										Sign In
 									</a>
 								</li>
