@@ -48,7 +48,7 @@ export const SocialLinks = ({ isSidebar }: { isSidebar?: boolean }) => {
 								<LinkedinSVG className="h-5 w-5 stroke-current" />
 							</a>
 						)}
-						{publication.links?.hashnode && (
+						{/*publication.links?.hashnode && (
 							<a
 								href={publication.links.hashnode}
 								target="_blank"
@@ -58,7 +58,7 @@ export const SocialLinks = ({ isSidebar }: { isSidebar?: boolean }) => {
 							>
 								<HashnodeSVG className="h-5 w-5 stroke-current" />
 							</a>
-						)}
+						)*/}
 					</>
 				)}
 
